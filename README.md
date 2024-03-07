@@ -16,6 +16,8 @@ Siga os passos abaixo para conseguir utilizar o sistema
 ### Criação de um arquivo .env para incluir as variáveis de ambiente.
 1. Dentro da pasta dotenv_files crie um novo arquivo (mkdir .env) e utilize o modelo de exemplo .env-example para preencher as variáveis de ambiente necessárias.
 
+2. Dentro da pasta frontend crie também um arquivo .env e ponha a seguinte propiedade: VUE_APP_API_BASE_URL = "link do localhost onde está sendo executada a API", essa propiedade é necessária para que a página consiga renderizar as imagens.
+
 ### Iniciando o build do container docker
  1. Após a criação do arquivo .env execute o comando docker-compose up --build no console na raiz do projeto e aguarde a criação dos containners.
 
