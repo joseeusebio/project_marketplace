@@ -14,6 +14,7 @@ services:
       - ./backend/dotenv_files/.env
     depends_on:
       - db
+
   frontend:
     build:
       context: ./frontend
@@ -24,6 +25,7 @@ services:
       - "8080:8080"
     depends_on:
       - backend
+
   db:
     image: postgres:13-alpine
     ports:
